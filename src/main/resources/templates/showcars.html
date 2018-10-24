@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Car</title>
+</head>
+<body>
+<h2>List of Cars</h2>
+<div th:each="eachCar:${cars}">
+    Car Name:<span th:text="${eachCar.name}"></span><br />
+    Car Type:<span th:text="${eachCar.type}"></span><br />
+    Description:<span th:text="${eachCar.description}"></span><br />
+
+</div>
+</body>
+</html>
